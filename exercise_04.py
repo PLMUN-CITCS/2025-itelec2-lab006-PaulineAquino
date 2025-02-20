@@ -30,11 +30,11 @@ log_result = math.log(10)  # Natural log (base e) of 10
 log10_result = math.log(100, 10)  # Logarithm base 10 of 100
 
 # Display the results
-print(f"Square root of {number} is: {sqrt_result}") 
-print(f"Value of pi is: {pi_value}") 
-print(f"Sine of 30 degrees (in radians) is: {sin_result}") 
-print(f"Cosine of 60 degrees (in radians) is: {cos_result}")
-print(f"Tangent of 45 degrees (in radians) is: {tan_result}") 
-print(f"Exponential of 2 is: {exp_result}") 
-print(f"Logarithm (base e) of 10 is: {log_result}") 
-print(f"Logarithm (base 10) of 100 is: {log10_result}")
+print(f"Square root of {number} is: {sqrt_result:.2f}")
+print(f"Value of pi is: {pi_value:.15f}")  # Ensure full precision of pi
+print(f"Sine of 30 degrees (in radians) is: {sin_result:.15f}")
+print(f"Cosine of 60 degrees (in radians) is: {cos_result:.15f}")
+print(f"Tangent of 45 degrees (in radians) is: {tan_result:.15f}")
+print(f"Exponential of 2 is: {exp_result:.15f}")
+print(f"Logarithm (base e) of 10 is: {log_result:.15f}")
+print(f"Logarithm (base 10) of 100 is: {log10_result:.1f}") # Expected to be exactly 2.0
